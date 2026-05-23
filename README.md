@@ -38,20 +38,27 @@ mcp-server-builder/
 
 ## Install
 
+### Claude.ai (Claude Desktop / web)
+
+Download the `.skill` file from the [latest release](https://github.com/drashrafsaiyed-cyber/claude-skill-mcp-server-builder/releases/latest) and install it through the Claude interface.
+
+### Claude Code (CLI)
+
+Clone directly into your Claude skills directory:
+
+**macOS / Linux**
 ```bash
-git clone https://github.com/drashrafsaiyed-cyber/claude-skill-mcp-server-builder
+git clone https://github.com/drashrafsaiyed-cyber/claude-skill-mcp-server-builder \
+  ~/.claude/skills/mcp-server-builder
 ```
 
-Then in Claude Code, point to the skill:
-
-```jsonc
-// .claude/settings.json
-{
-  "skills": [
-    "./claude-skill-mcp-server-builder"
-  ]
-}
+**Windows (PowerShell)**
+```powershell
+git clone https://github.com/drashrafsaiyed-cyber/claude-skill-mcp-server-builder `
+  "$env:USERPROFILE\.claude\skills\mcp-server-builder"
 ```
+
+Restart Claude Code — the skill loads automatically from the skills directory.
 
 ## Skill covers
 
